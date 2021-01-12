@@ -11,6 +11,7 @@ import {Link} from 'react-router-dom'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -34,11 +35,12 @@ export default function Navbar() {
           <Typography variant="h6" className={classes.title}>
            <Link to='/'> Catalog App</Link>
           </Typography>
+         <Button color="inherit"> <Link to='/auth'>Sign In </Link></Button>
          <Button color="inherit"> <Link to='/login'>Login </Link></Button>
-          <Button color="inherit">Add Product</Button>
-          <Button color="inherit">Products</Button>
-          <Button color="inherit">Sign Up</Button>
-          <Button color="inherit">Logout</Button>
+         <Button color="inherit"> <Link to='/logout'>Logout </Link></Button>
+         <Button color="inherit"> <Link to='/product'>Products </Link></Button>
+         <Button color="inherit"> <Link to='/addProduct'>Add Product </Link></Button>
+
           <Avatar className={classes.orange}>L</Avatar>
         </Toolbar>
       </AppBar>
