@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import { deepOrange } from '@material-ui/core/colors';
-
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,9 +32,9 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Catalog App
+           <Link to='/'> Catalog App</Link>
           </Typography>
-          <Button color="inherit"></Button>
+         <Button color="inherit"> <Link to='/login'>Login </Link></Button>
           <Button color="inherit">Add Product</Button>
           <Button color="inherit">Products</Button>
           <Button color="inherit">Sign Up</Button>
