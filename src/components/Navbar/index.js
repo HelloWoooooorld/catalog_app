@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import { deepOrange } from '@material-ui/core/colors';
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -32,9 +34,9 @@ export default function Navbar() {
           <Typography variant="h6" className={classes.title}>
             Catalog App
           </Typography>
+          <Button color="inherit"></Button>
           <Button color="inherit">Add Product</Button>
           <Button color="inherit">Products</Button>
-          <Button color="inherit">Login</Button>
           <Button color="inherit">Sign Up</Button>
           <Button color="inherit">Logout</Button>
           <Avatar className={classes.orange}>L</Avatar>
